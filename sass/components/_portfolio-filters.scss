@@ -1,0 +1,36 @@
+.button {
+  cursor: pointer;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: var(--main-letter-spacing);
+  background: var(--button-background-color-2);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  margin-right: 8px;
+  transition-property: background, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active {
+    background: var(--button-background-color-2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}

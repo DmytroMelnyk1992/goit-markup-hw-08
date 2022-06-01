@@ -1,3 +1,16 @@
+@media screen and (max-width: 480px) {
+  .portfolio-button {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    justify-content: flex-start;
+  }
+
+}
+
+
+
+
 .button {
   cursor: pointer;
   color: var(--primary-text-color);
@@ -14,6 +27,7 @@
   transition-property: background, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 15px;
 
   &:active {
     background: var(--button-background-color-2);
@@ -29,8 +43,8 @@
   }
 }
 
-.portfolio-button {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
+// .portfolio-button {
+//   display: flex;
+//   justify-content: center;
+//   padding-bottom: 50px;
+// }

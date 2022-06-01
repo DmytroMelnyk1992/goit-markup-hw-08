@@ -5,8 +5,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
   }
 
   .header .nav {
@@ -17,37 +16,43 @@
     min-height: 60px;
   }
 
-  .menu-button-open {
+  .menu-toggle {
+    cursor: pointer;
     display: inline-flex;
     margin: 0 auto;
     padding: 0;
     border: none;
     background-color: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
 
   .menu-button-close {
     position: absolute;
     top: 10px;
     right: 15px;
-
     display: inline-flex;
     margin-left: 0;
     padding: 0;
     border: none;
     background-color: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+
   }
 
-  // .menu-button .icon-cross {
-  //   display: none;
-  // }
-
-  // .menu-button.is-open .icon-cross {
-  //   display: block;
-  // }
-
-  // .menu-button.is-open .icon-open {
-  //   display: none;
-  // }
 
   .mob-menu {
     position: fixed;
@@ -60,6 +65,12 @@
     padding-bottom: 48px;
     background-color: #ffffff;
     overflow-y: auto;
+    transform: translateX(100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+
     .geometry-container {
       margin-left: 40px;
       display: flex;
@@ -68,6 +79,7 @@
       justify-content: space-between;
       align-items: flex-start;
     }
+
     .visually-hidden {
       position: absolute;
       clip: rect(0 0 0 0);
@@ -101,9 +113,11 @@
   .mob-menu-contacts {
     padding-bottom: 64px;
   }
+
   .mob-menu-contacts-item {
     padding-bottom: 32px;
   }
+
   .mob-tel {
     font-size: 34px;
     line-height: 1.2;
@@ -111,6 +125,7 @@
     color: #2196f3;
     text-decoration: none;
   }
+
   .mob-mail {
     text-decoration: none;
     font-size: 24px;
@@ -118,11 +133,13 @@
     letter-spacing: 0.02em;
     color: #757575;
   }
+
   .mob-soc-list {
     display: inline-flex;
     position: relative;
     margin: 0 auto;
   }
+
   .mob-soc-list-item {
     margin-right: 20px;
 
@@ -144,18 +161,12 @@
     color: #2196f3;
   }
 
-  // &.is-open {
-  //   display: block;
-  // }
 
-  // .mob-menu-nav {
-  //   margin-top: 48px;
-  //   margin-left: 15px;
-  // }
 
   .header-list-item {
     display: none;
   }
+
   .header-connect {
     display: none;
   }

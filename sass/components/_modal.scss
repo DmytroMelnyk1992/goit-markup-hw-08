@@ -81,7 +81,8 @@
     &:focus {
       border-color: #2196f3;
     }
-    &:focus + .input-icon {
+
+    &:focus+.input-icon {
       fill: var(--accent-color);
     }
   }
@@ -133,26 +134,23 @@
   }
 
   .user-agreement-label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
 
-  .agreement {
-    font-size: 12px;
+    margin: 20px 0 30px;
   }
 
   .agreement-link {
-    font-size: 12px;
+
     margin-left: 4px;
     color: #2196f3;
   }
+
   .agreement-icon {
     fill: transparent;
   }
@@ -169,15 +167,16 @@
   }
 
   .user-agreement {
-    &:focus + .user-agreement-label span {
+    &:focus+.user-agreement-label span {
       border-color: var(--button-background-color-1);
     }
-    &:checked + .user-agreement-label span {
+
+    &:checked+.user-agreement-label span {
       background-color: #188ce8;
       border: none;
     }
 
-    &:checked + .user-agreement-label .agreement-icon {
+    &:checked+.user-agreement-label .agreement-icon {
       fill: var(--accent-color);
     }
   }

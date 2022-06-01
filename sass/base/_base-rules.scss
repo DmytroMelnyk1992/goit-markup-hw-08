@@ -15,8 +15,11 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+
+  /////////не забути змінити після адаптиву картинок/////
+  //  max-width: 100%;
 }
 
 body {
@@ -26,6 +29,13 @@ body {
 }
 
 .container {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+  }
+
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -37,6 +47,9 @@ ul {
 }
 
 h2 {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -47,10 +60,16 @@ h2 {
 }
 
 .typical-padding-top {
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+  }
   padding-top: 94px;
 }
 
 .typical-padding-bottom {
+  @media screen and (max-width: 480px) {
+    padding-bottom: 60px;
+  }
   padding-bottom: 94px;
 }
 

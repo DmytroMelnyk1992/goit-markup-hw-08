@@ -22,12 +22,57 @@
   </head>
 
   <body>
-    <header class="box">
-      <div class=" header container">
-        <a href="./index.html" class="logo logo--geometry">
+    <header class="header">
+      <div class="box container"><a href="./index.html" class="logo logo--geometry">
           <span class="logo">Web</span><span class="logo logo--dark">Studio</span></a
         >
-        <nav>
+        <nav class="nav">
+          <div>
+          <button type="button" class="menu-button-open">
+          <svg width="40" height="40">
+            <use class="icon-open" href="./images/symbol-defs.svg#icon-menu_open"></use>
+            </svg></button>
+        <div class="mob-menu is-hidden">
+          <button type="button" class="menu-button-close">
+          <svg width="40" height="40" >
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_close"></use></svg></button>
+            <div class="geometry-container">
+          <div class="mob-menu-top">
+<ul class="mob-menu-nav">
+            <li class="mob-menu-nav-list-item">
+              <a href="./index.html" class="mob-menu-nav-list-link active">Студия</a>
+            </li>
+            <li class="mob-menu-nav-list-item">
+              <a href="./portfolio.html" class="mob-menu-nav-list-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu-nav-list-item">
+              <a href="" class="mob-menu-nav-list-link">Контакты</a>
+            </li>
+          </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts">
+              <li class="mob-menu-contacts-item">
+                <a href="tel:+380961111111" class="mob-tel">
+                +38096 111 11 11</a></li>
+                <li class="">
+                <a href="mailto:info@devstudio.com" class="mob-mail">
+                info@devstudio.com</a></li>
+                </ul>
+
+                <ul class="mob-soc-list">
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">Instagram</a></li>
+                  <li class="mob-soc-list-item" ><a href="" class="mob-soc-list-link">Twitter</a></li>
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">Facebook</a></li>
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">LinkedIn</a></li>
+                </ul>
+                
+              </div>
+          </div>
+        </div>
+        </div>
           <ul class="header">
             <li class="header-list-item">
               <a href="./index.html" class="header-link active current">Студия</a>
@@ -38,7 +83,7 @@
             <li class="header-list-item"><a href="" class="header-link">Контакты </a></li>
           </ul>
         </nav>
-        <!-- <div class="header-connect"> -->
+        <div class="header-connect">
           <div>
             <ul class="header-contacts">
               <li class="header-contacts-item">
@@ -53,13 +98,13 @@
       </div>
     </header>
     <main>
-      <!--main-section/-->
+      <!-- main-section-->
       <section class="main-section overlay">
         <div class="container">
           <h1 class="solutions">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="main-button type="button" data-modal-open>Заказать услугу</button>
+          <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -116,7 +161,7 @@
         </div>
       </section>
       <!--activity-section-->
-      <section class="typical-padding-top typical-padding-bottom"> 
+      <section class=" activity typical-padding-top typical-padding-bottom"> 
         <div class="container">
         <h2>Чем мы занимаемся</h2>
         <ul class="activity">
@@ -367,7 +412,7 @@ class="user-agreement visually-hidden"
     <footer class="footer-container">
       <div class="container footer-flex">
         <div class="footer-item">
-      <a href="WebStudio" class="logo  logo--geometry"
+      <a href="WebStudio" class="logo"
         ><span class="logo">Web</span><span class="logo logo--light">Studio</span></a
       >
         <address>
@@ -425,5 +470,6 @@ class="user-agreement visually-hidden"
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

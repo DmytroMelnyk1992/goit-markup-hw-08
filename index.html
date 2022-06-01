@@ -28,11 +28,50 @@
         >
         <nav class="nav">
           <div>
-          <button type="button" class="menu-button is-open">
+          <button type="button" class="menu-button-open">
           <svg width="40" height="40" aria-label="переключатель мобильного меню">
-            <use class="icon-close" href="./images/symbol-defs.svg#icon-menu_close"></use>
             <use class="icon-open" href="./images/symbol-defs.svg#icon-menu_open"></use>
-        </svg></button>
+            </svg></button>
+        <div class="mob-menu is-hidden">
+          <button type="button" class="menu-button-close">
+          <svg width="40" height="40" >
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_close"></use></svg></button>
+            <div class="geometry-container">
+          <div class="mob-menu-top">
+<ul class="mob-menu-nav">
+            <li class="mob-menu-nav-list-item">
+              <a href="./index.html" class="mob-menu-nav-list-link active">Студия</a>
+            </li>
+            <li class="mob-menu-nav-list-item">
+              <a href="./portfolio.html" class="mob-menu-nav-list-link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu-nav-list-item">
+              <a href="" class="mob-menu-nav-list-link">Контакты</a>
+            </li>
+          </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts">
+              <li class="mob-menu-contacts-item">
+                <a href="tel:+380961111111" class="mob-tel">
+                +38096 111 11 11</a></li>
+                <li class="">
+                <a href="mailto:info@devstudio.com" class="mob-mail">
+                info@devstudio.com</a></li>
+                </ul>
+
+                <ul class="mob-soc-list">
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">Instagram</a></li>
+                  <li class="mob-soc-list-item" ><a href="" class="mob-soc-list-link">Twitter</a></li>
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">Facebook</a></li>
+                  <li class="mob-soc-list-item"><a href="" class="mob-soc-list-link">LinkedIn</a></li>
+                </ul>
+                
+              </div>
+          </div>
+        </div>
         </div>
           <ul class="header">
             <li class="header-list-item">
@@ -65,7 +104,7 @@
           <h1 class="solutions">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="main-button type="button" data-modal-open>Заказать услугу</button>
+          <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -431,5 +470,6 @@ class="user-agreement visually-hidden"
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

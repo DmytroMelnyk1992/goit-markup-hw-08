@@ -1,49 +1,116 @@
-@media screen and (max-width: 480px) {
-  .portfolio-item-container-list {
+.portfolio-item-container-list-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-item-description {
+  color: var(--p-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  padding-top: 4px;
+}
+
+.text-inside-portfolio {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  height: 101%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+
+
+  @media screen and (max-width: 767px) {
+    padding: 77px 24px 77px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+  }
+}
+
+.portfolio-item-container-list {
+  @media screen and (max-width: 767px) {
     display: inline-flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
   }
 
-  .portfolio-item-container {
-    background: #ffffff;
-    width: 100%;
-    margin-bottom: 30px;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      transform: translateY(0%);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-        1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-      cursor: pointer;
-
-      .text-inside-portfolio {
-        transform: translateY(0%);
-      }
-    }
-  }
-
-  .text-inside-portfolio {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    padding: 77px 24px 77px;
-    height: 101%;
-    transform: translateY(100%);
-    transition: transform 300ms linear;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
   }
 
 }
+
+.portfolio-item-container {
+  display: flex;
+  flex-direction: column;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
+
+
+
+  &:hover {
+    transform: translateY(0%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    .text-inside-portfolio {
+      transform: translateY(0%);
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width:1199px) {}
 
 
 // .portfolio-item-container-list {
@@ -76,10 +143,6 @@
 //   }
 // }
 
-.portfolio-item-container-list-wrap {
-  position: relative;
-  overflow: hidden;
-}
 
 // .text-inside-portfolio {
 //   position: absolute;
@@ -96,28 +159,3 @@
 //   transform: translateY(100%);
 //   transition: transform 300ms linear;
 // }
-
-.portfolio-card {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.portfolio-item {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.portfolio-item-description {
-  color: var(--p-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
-  padding-top: 4px;
-}

@@ -1,8 +1,6 @@
 .activity {
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
   display: flex;
+
 
   &__item {
     position: relative;
@@ -34,5 +32,10 @@
 
   &__item:not(:first-child) {
     margin-left: 30px;
+  }
+
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }

@@ -1,15 +1,17 @@
-@media screen and (max-width: 480px) {
-  .portfolio-button {
+.portfolio-button {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25px;
     justify-content: flex-start;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 }
-
-
-
 
 .button {
   cursor: pointer;
@@ -42,9 +44,3 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
-// .portfolio-button {
-//   display: flex;
-//   justify-content: center;
-//   padding-bottom: 50px;
-// }

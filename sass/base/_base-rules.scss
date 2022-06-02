@@ -29,17 +29,24 @@ body {
 }
 
 .container {
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0px auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0px auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 ul {
@@ -50,6 +57,7 @@ h2 {
   @media screen and (max-width: 480px) {
     margin-bottom: 30px;
   }
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -60,16 +68,18 @@ h2 {
 }
 
 .typical-padding-top {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
   }
+
   padding-top: 94px;
 }
 
 .typical-padding-bottom {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
   }
+
   padding-bottom: 94px;
 }
 

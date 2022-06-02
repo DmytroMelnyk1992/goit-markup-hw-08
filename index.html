@@ -37,10 +37,10 @@
             <div class="mob-menu-top">
               <ul class="mob-menu-nav">
                 <li class="mob-menu-nav-list-item">
-                  <a href="./index.html" class="mob-menu-nav-list-link active">Студия</a>
+                  <a href="./index.html" class="mob-menu-nav-list-link ">Студия</a>
                 </li>
                 <li class="mob-menu-nav-list-item">
-                  <a href="./portfolio.html" class="mob-menu-nav-list-link ">Портфолио</a>
+                  <a href="./portfolio.html" class="mob-menu-nav-list-link active">Портфолио</a>
                 </li>
                 <li class="mob-menu-nav-list-item">
                   <a href="" class="mob-menu-nav-list-link ">Контакты</a>
@@ -209,8 +209,10 @@
         <h2>Наша команда</h2>
         <ul class="our-team-member-list">
           <li class="team-member-container">
-            <img srcset="./images/team_1.jpg 1x, ./images/team-1-2x.jpg 2x" src="images/team_1.jpg"
-              alt="Игорь Демьяненко" width="270" />
+            <img
+              srcset="./images/team_1_mob.jpg 270w, ./images/team_1_tablet.jpg 354w, ./images/team_1_desktop 450w, ./images/team_1_mob-2x.jpg 900w, ./images/team_1_tablet-2x.jpg 708w, ./images/team_1_desktop-2x 450w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw" src="
+              images/team_1_mob.jpg" alt="Игорь Демьяненко" />
             <div class="team-card">
               <p class="team-member">Игорь Демьяненко</p>
               <p class="team-member-position">Product Designer</p>
@@ -248,8 +250,10 @@
             </ul>
           </li>
           <li class="team-member-container">
-            <img srcset="./images/team_2.jpg 1x, ./images/team-2-2x.jpg 2x" src="images/team_2.jpg" alt="Ольга Репина"
-              width="270" />
+            <img
+              srcset="./images/team_2_mob.jpg 270w, ./images/team_2_tablet.jpg 354w, ./images/team_2_desktop 450w, ./images/team_2_mob-2x.jpg 900w, ./images/team_2_tablet-2x.jpg 708w, ./images/team_2_desktop-2x 450w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw" src="
+                          images/team_2_mob.jpg" alt="Ольга Репина" />
             <div class="team-card">
               <p class="team-member">Ольга Репина</p>
               <p class="team-member-position">Frontend Developer</p>
@@ -287,8 +291,10 @@
             </ul>
           </li>
           <li class="team-member-container">
-            <img srcset="./images/team_3.jpg 1x, ./images/team-3-2x.jpg 2x" src="images/team_3.jpg"
-              alt="Николай Тарасов" width="270" />
+            <img
+              srcset="./images/team_3_mob.jpg 270w, ./images/team_3_tablet.jpg 354w, ./images/team_3_desktop 450w, ./images/team_3_mob-2x.jpg 900w, ./images/team_3_tablet-2x.jpg 708w, ./images/team_3_desktop-2x 450w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw" src="
+                          images/team_3_mob.jpg" alt="Николай Тарасов" />
             <div class="team-card">
               <p class="team-member">Николай Тарасов</p>
               <p class="team-member-position">Marketing</p>
@@ -326,8 +332,10 @@
             </ul>
           </li>
           <li class="team-member-container">
-            <img srcset="./images/team_4.jpg 1x, ./images/team-4-2x.jpg 2x" src="images/team_4.jpg" alt="Михаил Ермаков"
-              width="270" />
+            <img
+              srcset="./images/team_4_mob.jpg 270w, ./images/team_4_tablet.jpg 354w, ./images/team_4_desktop 450w, ./images/team_4_mob-2x.jpg 900w, ./images/team_4_tablet-2x.jpg 708w, ./images/team_4_desktop-2x 450w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw" src="
+                          images/team_4_mob.jpg" alt="Михаил Ермаков" />
             <div class="team-card">
               <p class="team-member">Михаил Ермаков</p>
               <p class="team-member-position">UI Designer</p>
@@ -468,7 +476,7 @@
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
               </span>
-              <p class="agreement">Соглашаюсь с рассылкой и принимаю</p>
+              Соглашаюсь с рассылкой и принимаю
               <a class="agreement-link" href="">Условия договора</a>
             </label>
           </div>
@@ -481,8 +489,8 @@
       </div>
     </div>
   </main>
-  <footer class="footer-container">
-    <div class="container footer-flex">
+  <footer class="footer-container container">
+    <div class="footer-flex">
       <div class="footer-item">
         <a href="WebStudio" class="logo"><span class="logo">Web</span><span class="logo logo--light">Studio</span></a>
         <address>
@@ -516,7 +524,6 @@
               </svg>
             </a>
           </li>
-
           <li class="footer-soc-list-item">
             <a href="" class="footer-soc-list-link">
               <svg class="footer-soc-list-icon" width="20px" height="20px">
@@ -533,20 +540,21 @@
           </li>
         </ul>
       </div>
-      <div class="footer-email">
-        <p class="footer-invite">Подпишитесь на рассылку</p>
-        <form>
-          <input type="email" name="user-email" placeholder="E-mail" class="footer-email-field" />
-        </form>
-      </div>
-      <div class="subscribe-button-container">
-        <button type="button" class="subscribe-button">
-          <span>Подписаться</span><svg class="subscribe-icon" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
-        </button>
-      </div>
     </div>
+    <div class="footer-email">
+      <p class="footer-invite">Подпишитесь на рассылку</p>
+      <form>
+        <input type="email" name="user-email" placeholder="E-mail" class="footer-email-field" />
+      </form>
+    </div>
+    <div class="subscribe-button-container">
+      <button type="button" class="subscribe-button">
+        <span>Подписаться</span><svg class="subscribe-icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+        </svg>
+      </button>
+    </div>
+
   </footer>
   <script src="./js/modal.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

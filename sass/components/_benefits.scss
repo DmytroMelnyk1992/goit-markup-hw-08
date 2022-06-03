@@ -3,7 +3,7 @@
 
   @media screen and (max-width: 767px) {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width:768px) {
@@ -73,9 +73,14 @@
     letter-spacing: var(--main-letter-spacing);
     padding-bottom: 10px;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+
   }
 
   &__text {

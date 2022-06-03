@@ -318,67 +318,74 @@
       </div>
     </section>
   </main>
-  <footer class="footer-container container">
-    <div class="footer-flex">
-      <div class="footer-item">
-        <a href="WebStudio" class="logo  logo--geometry"><span class="logo">Web</span><span
-            class="logo logo--light">Studio</span></a>
-
-        <address>
-          <ul>
-            <li>
-              <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__wrap">
+        <div class="footer__item">
+          <a href="WebStudio" class="logo"><span class="logo">Web</span><span class="logo logo--light">Studio</span></a>
+          <address>
+            <ul class="address__list">
+              <li class="address__item">
+                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="footer-mail">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="footer-tel">+38099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-soc-container">
+          <p class="footer-invite">Присоединяйтесь</p>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-list-item">
+              <a href="" class="footer-soc-list-link">
+                <svg class="footer-soc-list-icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a href="mailto:info@example.com" class="footer-mail">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="footer-tel">+38099 111 11 11</a></li>
+            <li class="footer-soc-list-item">
+              <a href="" class="footer-soc-list-link">
+                <svg class="footer-soc-list-icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-list-item">
+              <a href="" class="footer-soc-list-link">
+                <svg class="footer-soc-list-icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-list-item">
+              <a href="" class="footer-soc-list-link">
+                <svg class="footer-soc-list-icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
-      <div class="footer-soc-container">
-        <p class="footer-invite">Присоединяйтесь</p>
-        <ul class="footer-soc-list">
-          <li class="footer-soc-list-item">
-            <a href="" class="footer-soc-list-link">
-              <svg class="footer-soc-list-icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-list-item">
-            <a href="" class="footer-soc-list-link">
-              <svg class="footer-soc-list-icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          <li class="footer-soc-list-item">
-            <a href="" class="footer-soc-list-link">
-              <svg class="footer-soc-list-icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-list-item">
-            <a href="" class="footer-soc-list-link">
-              <svg class="footer-soc-list-icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-email">
-        <p class="footer-invite">Подпишитесь на рассылку</p>
-        <form>
-          <input type="email" name="user-email" placeholder="E-mail" class="footer-email-field">
-        </form>
-      </div>
-      <div class="subscribe-button-container">
-        <button type="button" class="subscribe-button"><span>Подписаться</span><svg class="subscribe-icon" width="24"
-            height="24">
+      <div class="footer__form">
+        <div class="footer-infite-geometry">
+          <p class="footer-invite">Подпишитесь на рассылку</p>
+          <form class="footer__form-item">
+            <input type="email" name="user-email" placeholder="E-mail" class="footer-email-field" />
+          </form>
+        </div>
+        <!-- subscribe-button-container -->
+        <button type="button" class="subscribe-button footer-button--position">
+          <span>Подписаться</span><svg class="subscribe-icon" width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-          </svg></button>
+          </svg>
+        </button>
+
       </div>
-    </div>
     </div>
   </footer>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
